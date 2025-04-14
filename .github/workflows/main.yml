@@ -13,6 +13,7 @@ jobs:
             - name: Deploy to EC2
               run: |
                 ssh -o StrictHostKeyChecking=no -i private_key.pem ${{ secrets.NAME_HOST }}@${{ secrets.IP_HOST }} << 'EOF'
+                  cd ~
                   rm -rf bot
                   git clone https://github.com/andrii-br/Tg-bot-pdf2doc.git /bot
                   cd bot/
