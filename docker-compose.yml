@@ -1,6 +1,6 @@
 services:
   bot:
-    build: ./
+    build: .
     container_name: bot
     volumes:
       - ./downloads/:/downloads/
