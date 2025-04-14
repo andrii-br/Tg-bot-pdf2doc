@@ -15,8 +15,8 @@ jobs:
                 ssh -o StrictHostKeyChecking=no -i private_key.pem ${{ secrets.NAME_HOST }}@${{ secrets.IP_HOST }} << 'EOF'
                   cd ~
                   rm -rf bot
-                  git clone https://github.com/andrii-br/Tg-bot-pdf2doc.git /bot
-                  cd bot/
+                  git clone https://github.com/andrii-br/Tg-bot-pdf2doc.git bot
+                  cd bot
 
                   echo "BOT_TOKEN=${{ secrets.BOT_TOKEN }}" > .env
                   
