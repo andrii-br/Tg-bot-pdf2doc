@@ -5,7 +5,7 @@ services:
     volumes:
       - ./downloads/:/downloads/
     ports:
-      - "9100:9100"
+      - "8000:8000"
 
   prometheus:
     image: prom/prometheus
