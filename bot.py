@@ -1,3 +1,4 @@
+from prometheus_client import start_http_server
 import os
 from telegram import Update
 from telegram.ext import (
@@ -6,9 +7,8 @@ from telegram.ext import (
 )
 from dotenv import load_dotenv
 from pdf2docx import Converter
-from prometheus_client import start_http_srver
 
-start_http_srver(8000)
+start_http_server(8000)
 
 # Загрузка токена из .env
 load_dotenv()

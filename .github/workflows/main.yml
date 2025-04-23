@@ -24,5 +24,6 @@ jobs:
                   docker-compose up --build -d
                   sleep 5
                   docker ps -a
+                  curl http://localhost:8000/metrics
                 EOF
 
