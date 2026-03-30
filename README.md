@@ -1,4 +1,4 @@
-# Telegram Bot in Docker
+# Telegram Bot
 
 My pet-project to practice Docker and AWS deployment.
 
